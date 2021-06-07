@@ -362,21 +362,6 @@ body {
   transform: translateY(-2px);
 }
 
-.header__btn-transparent,
-.header__btn-filling {
-  padding: 8px 30px;
-}
-
-.header__btn-transparent {
-  margin-right: 15px;
-}
-
-.hero__btn-transparent,
-.hero__btn-filling {
-  min-width: 155px;
-  padding: 12px 32px;
-}
-
 .business__btn-filling,
 .property__btn-filling {
   min-width: 155px;
@@ -393,7 +378,8 @@ h1 {
   font-weight: 700;
   font-size: 44px;
   line-height: 1.13;
-  color: var(--subsidiary-theme-color);
+  color: var(--secondary-theme-color);
+  margin-bottom: 20px;
 }
 
 h2.title {
@@ -453,6 +439,7 @@ span.color-words {
   width: 100%;
   height: 36px;
   margin-right: 45px;
+  object-fit: cover;
 }
 
 .navbar__links a {
@@ -463,4 +450,77 @@ span.color-words {
 .navbar__links a:hover {
   color: var(--subsidiary-theme-color);
 }
+
+.header__btn-transparent,
+.header__btn-filling {
+  padding: 8px 30px;
+}
+
+.header__btn-transparent {
+  margin-right: 15px;
+}
 /* =================================== HEADER END ===================================  */
+
+/* =================================== HERO START ===================================  */
+.hero {
+  padding-top: 100px;
+}
+
+.hero__img-box img {
+  width: auto;
+  height: auto;
+  object-fit: cover;
+}
+
+.hero__title-desc {
+  font-family: 'Gilroy-SemiBold';
+  font-size: 16px;
+  line-height: 1.4;
+  color: var(--darknes-theme-color);
+  margin-bottom: 40px;
+}
+
+.hero__btn-transparent,
+.hero__btn-filling {
+  min-width: 155px;
+  padding: 12px 32px;
+}
+
+.hero__btn-transparent {
+  margin-left: 15px;
+}
+
+.hero__video-box {
+  width: 200px;
+  height: 80px;
+  margin-right: 20px;
+}
+
+.hero__video-wrapper {
+  display: flex;
+  margin-top: 60px;
+}
+
+.hero__video-wrapper video {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  background-color: var(--darknes-theme-color);
+}
+
+.hero__video-info-title {
+  font-family: 'Rubik';
+  font-size: 16px;
+  line-height: 1.1;
+  margin-bottom: 7px;
+  color: var(--darknes-theme-color);
+}
+
+.hero__video-info-link {
+  color: var(--lightnes-gray);
+}
+
+.hero__video-info-link:hover {
+  text-decoration: underline;
+}
+/* =================================== HERO END ===================================  */
