@@ -1,3 +1,4 @@
+/* =================================== FONTS START ===================================  */
 /* cyrillic-ext */
 @font-face {
   font-family: 'Inter';
@@ -137,6 +138,9 @@
   font-display: swap;
   src: url('../fonts/Gilroy-SemiBold.woff') format('woff');
 }
+/* =================================== FONTS END ===================================  */
+
+/* =================================== COMMON START ===================================  */
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -295,6 +299,12 @@ span,
   --secondary-theme-color: hsl(calc(var(--hue) - 80), 73%, 77%);
   --darknes-theme-color: hsl(calc(var(--hue) + 18), 23%, 56%);
   --subsidiary-theme-color: hsl(calc(var(--hue) - 210), 87%, 62%);
+  --opacity-subsidiary-theme-color: hsla(
+    calc(var(--hue) - 210),
+    87%,
+    62%,
+    0.15
+  );
   --lightnes-gray: hsl(calc(var(--hue) - 6), 22%, 66%);
   --brightnes-color: hsl(calc(var(--hue) - 238), 0%, 100%);
 }
@@ -312,3 +322,109 @@ body {
   max-width: 1150px;
   margin: 0 auto;
 }
+
+.btn {
+  cursor: pointer;
+  font-family: 'Rubik';
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.6;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 2px;
+  border: 1px solid transparent;
+  color: var(--brightnes-color);
+  border-radius: 3px;
+  transition: 0.25s ease-in-out;
+}
+
+.btn-transparent {
+  background-color: transparent;
+  color: var(--subsidiary-theme-color);
+  border: 1px solid var(--subsidiary-theme-color);
+}
+
+.btn-transparent:hover {
+  background-color: var(--subsidiary-theme-color);
+  color: var(--brightnes-color);
+}
+
+.btn-filling {
+  background-color: var(--subsidiary-theme-color);
+  box-shadow: -11px 18px 37px var(--opacity-subsidiary-theme-color);
+}
+
+.btn-filling:hover {
+  background-color: transparent;
+  color: var(--subsidiary-theme-color);
+  border: 1px solid var(--subsidiary-theme-color);
+}
+
+.header__btn-transparent,
+.header__btn-filling {
+  padding: 8px 30px;
+}
+
+.hero__btn-transparent,
+.hero__btn-filling {
+  min-width: 155px;
+  padding: 12px 32px;
+}
+
+.business__btn-filling,
+.property__btn-filling {
+  min-width: 155px;
+  min-height: 50px;
+}
+
+.framework__btn-filling {
+  min-width: 165px;
+  min-height: 55px;
+}
+
+h1 {
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 44px;
+  line-height: 1.13;
+  color: var(--subsidiary-theme-color);
+}
+
+h2.title {
+  font-family: 'Inter';
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+}
+
+span.color-words {
+  font-family: 'Inter';
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  color: var(--subsidiary-theme-color);
+}
+
+.title__desc {
+  font-family: 'Gilroy-SemiBold';
+  font-size: 16px;
+  line-height: 1.4;
+  text-align: center;
+  color: var(--darknes-theme-color);
+}
+
+.navbar__links {
+  font-family: 'Gilroy-SemiBold';
+  font-weight: 600;
+  font-size: 12px;
+  color: var(--lightnes-gray);
+}
+
+.hero__desc {
+  font-family: 'Gilroy-SemiBold';
+  font-size: 18px;
+  line-height: 1.22;
+  color: var(--darknes-theme-color);
+}
+/* =================================== COMMON END ===================================  */
