@@ -307,14 +307,26 @@ span,
   );
   --lightnes-gray: hsl(calc(var(--hue) - 6), 22%, 66%);
   --brightnes-color: hsl(calc(var(--hue) - 238), 0%, 100%);
+  --primary-gradient-color: hsl(calc(var(--hue) + 46), 54%, 25%);
+  --secondary-gradient-color: hsl(calc(var(--hue) - 7), 88%, 13%);
 }
 
 body {
   background-color: var(--theme-color);
-  color: var(--lightnes-gray);
   font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue',
     Arial, 'Noto Sans', 'Liberation Sans', sans-serif, 'Apple Color Emoji',
     'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  color: var(--lightnes-gray);
+}
+
+.gradient__wrapper {
+  background: linear-gradient(
+        220deg,
+        var(--primary-gradient-color),
+        var(--secondary-gradient-color)
+      )
+      no-repeat 0 0 / 100%,
+    var(--theme-color);
 }
 
 .container {
@@ -388,6 +400,7 @@ h2.title {
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
+  color: var(--secondary-theme-color);
 }
 
 span.color-words {
@@ -532,5 +545,42 @@ span.color-words {
 .brands {
   padding-top: 40px;
   padding-bottom: 100px;
+}
+/* =================================== BRANDS END ===================================  */
+
+/* =================================== BRANDS END ===================================  */
+.services__title {
+  margin-bottom: 15px;
+}
+
+.services__box-wrapper {
+  margin-top: 50px;
+}
+
+.services__box {
+  display: flex;
+  margin-bottom: 45px;
+  height: 100%;
+}
+
+.services__box img {
+  margin-right: 30px;
+}
+
+.services__box-subtitle,
+.services__box-desc {
+  font-family: 'Gilroy-SemiBold';
+  line-height: 1.2;
+}
+
+.services__box-subtitle {
+  color: var(--secondary-theme-color);
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.services__box-desc {
+  font-size: 14px;
+  color: var(--darknes-theme-color);
 }
 /* =================================== BRANDS END ===================================  */
