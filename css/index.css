@@ -491,27 +491,30 @@ span.color-words {
 }
 
 .hero__video-box {
-  width: 200px;
+  width: 220px;
   height: 80px;
   margin-right: 20px;
+  border: 1px solid var(--secondary-theme-color);
+  border-radius: 5px;
 }
 
 .hero__video-wrapper {
   display: flex;
+  align-items: center;
   margin-top: 60px;
 }
 
 .hero__video-wrapper video {
   width: 100%;
-  height: auto;
+  height: 100%;
   object-fit: cover;
-  background-color: var(--darknes-theme-color);
+  background-color: transparent;
 }
 
 .hero__video-info-title {
   font-family: 'Rubik';
   font-size: 16px;
-  line-height: 1.1;
+  line-height: 1.4;
   margin-bottom: 7px;
   color: var(--darknes-theme-color);
 }
@@ -524,3 +527,10 @@ span.color-words {
   text-decoration: underline;
 }
 /* =================================== HERO END ===================================  */
+
+/* =================================== BRANDS START ===================================  */
+.brands {
+  padding-top: 40px;
+  padding-bottom: 100px;
+}
+/* =================================== BRANDS END ===================================  */
