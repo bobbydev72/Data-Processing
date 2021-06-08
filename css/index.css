@@ -653,3 +653,23 @@ span.color-words {
   margin-bottom: 17px;
 }
 /* =================================== PRICING END ===================================  */
+
+/* =================================== FRAMEWORK START ===================================  */
+.framework {
+  text-align: center;
+  padding-bottom: 60px;
+}
+
+.framework__title {
+  margin-bottom: 45px;
+}
+
+.framework img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+  position: relative;
+  margin-top: -12%;
+}
+/* =================================== FRAMEWORK END ===================================  */
