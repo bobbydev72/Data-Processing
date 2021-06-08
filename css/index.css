@@ -603,6 +603,7 @@ span.color-words {
 }
 /* =================================== BRANDS END ===================================  */
 
+/* =================================== TRAFFIC START ===================================  */
 .traffic {
   padding-top: 162px;
   padding-bottom: 200px;
@@ -627,3 +628,28 @@ span.color-words {
   height: auto;
   object-fit: cover;
 }
+/* =================================== TRAFFIC END ===================================  */
+
+/* =================================== PRICING START ===================================  */
+.pricing {
+  padding-bottom: 170px;
+}
+
+.pricing__desc {
+  padding-top: 32px;
+  padding-bottom: 50px;
+}
+
+.pricing__box {
+  text-align: center;
+}
+
+.pricing__box-title {
+  font-family: 'inter';
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  color: var(--secondary-theme-color);
+  margin-bottom: 17px;
+}
+/* =================================== PRICING END ===================================  */
