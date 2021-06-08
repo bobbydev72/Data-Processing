@@ -307,13 +307,13 @@ span,
   );
   --lightnes-gray: hsl(calc(var(--hue) - 6), 22%, 66%);
   --brightnes-color: hsl(calc(var(--hue) - 238), 0%, 100%);
-  --primary-gradient-color: hsl(calc(var(--hue) + 46), 54%, 25%);
+  --primary-gradient-color: hsla(calc(var(--hue) + 46), 54%, 25%, 0.6);
   --secondary-gradient-color: hsl(calc(var(--hue) - 7), 88%, 13%);
 }
 
 body {
   background: linear-gradient(
-        200deg,
+        230deg,
         var(--primary-gradient-color) 10%,
         var(--secondary-gradient-color) 90%
       )
@@ -777,3 +777,55 @@ span.color-words {
   margin-top: 3px;
 }
 /* =================================== PROPERTY END ===================================  */
+
+/* =================================== HELP START ===================================  */
+.help{
+  padding-bottom: 200px;
+}
+
+.help__wrapper{
+  display: flex;
+  align-items: center;
+}
+
+.help__img-box img{
+  width: 520px;
+  height: auto;
+  object-fit: cover;
+}
+
+.help__title{
+  font-family: 'Inter';
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.23;
+  color: var(--secondary-theme-color);
+}
+
+.help__desc{
+  margin-top: 32px;
+  margin-bottom: 50px;
+}
+
+.help__item-wrapper{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.help__item-box{
+  font-family: "Gilroy-SemiBold";
+  font-size: 15px;
+}
+
+.help__item-box_title{
+  color: var(--secondary-theme-color);
+  font-weight: 700;
+  margin-top: 15px;
+  margin-bottom: 8px;
+}
+
+.help__item-box_desc{
+  color: var(--darknes-theme-color);
+}
+/* =================================== HELP END ===================================  */
