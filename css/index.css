@@ -673,3 +673,107 @@ span.color-words {
   margin-top: -12%;
 }
 /* =================================== FRAMEWORK END ===================================  */
+
+/* =================================== PROPERTY START ===================================  */
+.property {
+  padding-bottom: 170px;
+}
+
+.property__desc {
+  padding-top: 32px;
+  padding-bottom: 45px;
+}
+
+.property__info-box {
+  padding: 5%;
+}
+
+.property__card {
+  width: 280px;
+  min-height: 440px;
+  font-family: "Gilroy-SemiBold";
+  border-radius: 0 0 12px 12px;
+  background-color: var(--brightnes-color);
+  position: relative;
+}
+
+.property__card::after{
+  content: '';
+  position: absolute;
+  left: -70px;
+  top: 110px;
+  width: 120px;
+  height: 120px;
+  background: url('../img/property-deco1.webp') no-repeat 100% / 120px;
+}
+
+.property__card::before{
+  content: '';
+  position: absolute;
+  right: -100px;
+  top: 210px;
+  width: 120px;
+  height: 120px;
+  z-index: -1;
+  background: url('../img/property-deco2.webp') no-repeat 100% / 120px;
+}
+
+.property__card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.property__card-info {
+  padding: 20px 30px;
+}
+
+.property__card-title{
+  color: var(--theme-color);
+  line-height: 1.25;
+  margin-bottom: 3px;
+}
+
+.property__card-desc{
+  color: var(--darknes-theme-color);
+  font-size: 12px;
+  margin-bottom: 22px;
+}
+
+.property__card-price{
+  font-family: "Inter";
+  --price-color: #13C296;
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: var(--price-color);
+}
+
+.property__card-price_desc{
+  font-size: 12px;
+  margin-bottom: 35px;
+  text-transform: uppercase;
+}
+
+.property__card-statistic_wrapper{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 20px;
+  border-top: 1px solid #ccc;
+}
+
+.property__card-statistic{
+  display: flex;
+  flex-direction: column;
+}
+
+.property__card-statistic_title{
+  color: var(--theme-color);
+  font-size: 17px;
+}
+
+.property__card-statistic_desc{
+  font-size: 13px;
+  margin-top: 3px;
+}
+/* =================================== PROPERTY END ===================================  */
